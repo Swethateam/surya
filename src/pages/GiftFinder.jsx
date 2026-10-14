@@ -47,7 +47,7 @@ const gifts = [
     id: 6,
     image: "/7th.png",
     letter: "chlm",
-    department: "Computer Science",
+    department: "II Physical education ",
     task: "Come to me and tell the last letter of your name. 💌",
     clueLetter: "A",
   },
