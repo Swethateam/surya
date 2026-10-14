@@ -6,7 +6,8 @@ const gifts = [
   {
     id: 1,
     image: "/1st.png",
-    letter: "krithi",
+    letter: "krithi ",
+    department: "II Physical education",
     task: "Go to krithi and tell her the first letter of your name. 🤫",
     clueLetter: "N",
   },
@@ -14,6 +15,7 @@ const gifts = [
     id: 2,
     image: "/2nd.png",
     letter: "ranji",
+    department: "II Physical education",
     task: "Go to ranji and tell her the second letter of your name. 💌",
     clueLetter: "I",
   },
@@ -21,6 +23,7 @@ const gifts = [
     id: 3,
     image: "/3rd.png",
     letter: "priya",
+    department: "I Chemistry",
     task: "Go to priya and tell her the third letter of your name. 💌",
     clueLetter: "T",
   },
@@ -28,6 +31,7 @@ const gifts = [
     id: 4,
     image: "/4th.png",
     letter: "viji",
+    department: "I Fsc",
     task: "Go to viji and tell her the fourth letter of your name. 💌",
     clueLetter: "H",
   },
@@ -35,6 +39,7 @@ const gifts = [
     id: 5,
     image: "/5th.png",
     letter: "velmayil",
+    department: "II Tamil",
     task: "Go to velmayil and tell her the fifth letter of your name. 💌",
     clueLetter: "Y",
   },
@@ -42,7 +47,8 @@ const gifts = [
     id: 6,
     image: "/7th.png",
     letter: "chlm",
-    task: "come to me and tell the last letter of your name. 💌",
+    department: "Computer Science",
+    task: "Come to me and tell the last letter of your name. 💌",
     clueLetter: "A",
   },
 ];
@@ -93,6 +99,7 @@ function GiftFinder({ onNext }) {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.font = "600 16px sans-serif";
+
     ctx.fillText(
       "✦  SCRATCH HERE  ✦",
       rect.width / 2,
@@ -382,7 +389,8 @@ function GiftFinder({ onNext }) {
                       </p>
 
                       <div className="finder-letter">
-                        {selectedGift.letter}
+                        <div>{selectedGift.letter}</div>
+                        <div>{selectedGift.department}</div>
                       </div>
 
                       <p className="finder-clue">
